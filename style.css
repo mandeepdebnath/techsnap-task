@@ -111,7 +111,7 @@ textarea {
   image-rendering: crisp-edges;
   -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   cursor: pointer;
-  margin-left: -15px;
+  margin-left: -20px;
 }
 
 nav {
