@@ -103,10 +103,14 @@ textarea {
 
 /* navbar */
 
-.logo {
+.logo img {
+  height: 50px;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
   cursor: pointer;
-  font-size: 1.3rem;
-  font-weight: 900;
 }
 
 nav {
@@ -169,7 +173,8 @@ nav.close-menu {
 
 .social-links,
 .trending-posts,
-.newsletter-container {
+.newsletter-container,
+.ad-section {
   margin-bottom: 20px;
 }
 
