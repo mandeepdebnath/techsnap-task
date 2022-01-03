@@ -302,6 +302,15 @@ nav.close-menu {
   display: flex;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #f7f7f7;
+  border-top: 1px solid rgba(0, 0, 0, 0.311);
+}
+
 /* responsive media queries */
 
 @media (max-width: 768px) {
