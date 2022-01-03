@@ -82,8 +82,13 @@ input {
 
 textarea {
   width: 100%;
-  height: 200px;
+  height: 150px;
   resize: none;
+  padding: 10px;
+  font-weight: 300;
+  font-size: 1rem;
+  border: 1px solid rgb(200, 200, 200);
+  background: #f4f4f4;
 }
 
 /* newsletter */
@@ -143,6 +148,36 @@ nav .nav-menu {
 .blog-content h2 {
   margin-top: 35px;
   margin-bottom: 20px;
+}
+
+.react-section {
+  margin-top: 50px;
+}
+
+.react-section .post-react {
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border-top: 1px solid rgb(153, 153, 153);
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.comment-container {
+  margin: 10px 0;
+}
+
+.comment-container .comment-box {
+  border: 1px solid rgb(200, 200, 200);
+  padding: 10px;
+  background: #f4f4f4;
+}
+
+.comment-info {
+  margin-bottom: 15px;
+}
+
+.comment-info .author {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 /* responsive media queries */
