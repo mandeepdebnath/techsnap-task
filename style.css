@@ -260,6 +260,15 @@ nav.close-menu {
   border-bottom: 1px solid rgb(153, 153, 153);
 }
 
+.react-options button {
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+.react-options button img {
+  height: 18px;
+}
+
 .comment-container {
   margin: 10px 0;
 }
