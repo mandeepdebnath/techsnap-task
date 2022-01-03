@@ -138,6 +138,19 @@ nav.close-menu {
 .mobile-menu .buttons {
   gap: 15px;
 }
+.mobile-nav {
+  display: none;
+}
+.mobile-nav .toggle {
+  cursor: pointer;
+}
+.mobile-nav .toggle i {
+  font-size: 25px;
+  transition: ease;
+}
+.mobile-menu .show-menu {
+  display: flex;
+}
 
 /* main body */
 
@@ -192,6 +205,7 @@ nav.close-menu {
   gap: 10px;
   border-bottom: 1px solid #000;
   padding: 15px 0;
+  align-items: center;
 }
 .post-card img {
   width: 150px;
@@ -288,18 +302,11 @@ nav.close-menu {
   font-size: 1.2rem;
 }
 
-.mobile-nav {
-  display: none;
+.related-posts h1 {
+  margin-bottom: 20px;
 }
-.mobile-nav .toggle {
-  cursor: pointer;
-}
-.mobile-nav .toggle i {
-  font-size: 25px;
-  transition: ease;
-}
-.mobile-menu .show-menu {
-  display: flex;
+.related-posts .post-card {
+  border: none;
 }
 
 footer {
