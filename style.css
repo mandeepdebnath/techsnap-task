@@ -335,6 +335,12 @@ footer {
     display: flex;
   }
   .grid {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 550px) {
+  .grid {
     grid-template-columns: 1fr;
   }
 }
