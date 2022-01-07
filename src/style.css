@@ -420,6 +420,63 @@ footer {
   color: #6f6f6f;
 }
 
+.mission-section {
+  margin-bottom: 80px;
+}
+.mission-section h1 {
+  color: #3c4852;
+  font-size: 2.5rem;
+  max-width: 600px;
+}
+.mission-section h5 {
+  color: #52be81;
+  margin-bottom: 20px;
+}
+.mission-section .stats {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 60px;
+  padding: 50px;
+}
+.mission-section .stats .stats-grid,
+.mission-section .stats img {
+  width: 50%;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 40px;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0px 16px 32px rgba(218, 218, 218, 0.699);
+}
+.stat h2 {
+  font-size: 2.5rem;
+}
+.stat h5 {
+  font-size: 1rem;
+  color: #798b94;
+}
+.stat-1 h2 {
+  color: #52be81;
+}
+.stat-2 h2 {
+  color: #2c81f7;
+}
+.stat-3 h2 {
+  color: #ffad3d;
+}
+.stat-4 h2 {
+  color: #eb5757;
+}
+
 .program-section {
   display: flex;
   flex-direction: column;
@@ -526,6 +583,18 @@ footer {
     height: 40px;
     width: 40px;
     padding: 13px;
+  }
+
+  .mission-section .stats {
+    flex-direction: column;
+    padding: 0;
+  }
+  .stat h5 {
+    font-size: 12px;
+  }
+  .mission-section .stats .stats-grid,
+  .mission-section .stats img {
+    width: 100%;
   }
 }
 
