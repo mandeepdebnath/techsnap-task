@@ -356,7 +356,9 @@ footer {
     brightness(96%) contrast(110%);
 }
 .why-section .icon {
-  padding: 15px 18px;
+  height: 70px;
+  width: 70px;
+  padding: 18px;
   display: inline-block;
   border-radius: 100%;
 }
@@ -518,7 +520,9 @@ footer {
     font-size: 15px;
   }
   .why-section .icon {
-    padding: 10px 13px;
+    height: 44px;
+    width: 44px;
+    padding: 11px;
   }
 }
 
