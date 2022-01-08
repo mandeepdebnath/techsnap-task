@@ -484,6 +484,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 .program-section h1 {
   font-size: 1.8rem;
@@ -526,6 +527,57 @@ footer {
 }
 .g-8 {
   grid-area: g-8;
+}
+
+.skills-section .subtitle {
+  font-size: 15px;
+  margin-bottom: 30px;
+  color: #575757;
+}
+.skills-section .skills-chart {
+  padding: 20px 30px;
+}
+.skills-chart-labels {
+  display: flex;
+  width: 100%;
+  gap: 200px;
+  margin-bottom: 30px;
+}
+
+.skills-mobile {
+  display: none;
+}
+.skills-mobile h1 {
+  margin-bottom: 20px;
+}
+
+.glide .skill-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.skill-card h2 {
+  font-size: 1rem;
+}
+.skill-card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.skill-card .tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+  background: #706dd7;
+  margin: 3px;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 100px;
 }
 
 /* responsive media queries */
@@ -607,6 +659,12 @@ footer {
   }
   .stat h2 {
     font-size: 2rem;
+  }
+  .skills-desktop {
+    display: none;
+  }
+  .skills-mobile {
+    display: block;
   }
 }
 
