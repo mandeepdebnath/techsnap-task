@@ -535,18 +535,77 @@ footer {
   color: #575757;
 }
 .skills-section .skills-chart {
-  padding: 20px 30px;
-}
-.skills-chart-labels {
   display: flex;
-  width: 100%;
-  gap: 200px;
-  margin-bottom: 30px;
+  gap: 50px;
+}
+.skills-job-family,
+.skills-job-role,
+.skills-job-role ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
+.skill-content {
+  color: #575757;
+  font-size: 18px;
+  padding: 10px;
+  border-bottom: 1px solid #5757571d;
+}
+.skill-content-label {
+  padding: 10px;
+}
+
+.skills-job-family .skill-content {
+  cursor: pointer;
+}
+.skills-job-family .active {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 2px rgba(160, 160, 160, 0.242);
+}
+.skills-job-role .skill-note {
+  color: #5757578e;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-tags .tag {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+  background: #706dd7;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 100px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-job-role ul {
+  display: none;
+}
+.skills-job-role ul.active {
+  display: flex;
+}
+.skills-job-family,
+.skills-job-role {
+  width: 30%;
+}
+.skills-chart .skills-tags {
+  width: 40%;
+}
+.skills-chart {
+  padding: 20px;
+}
 .skills-mobile {
   display: none;
 }
+
 .skills-mobile h1 {
   margin-bottom: 20px;
 }
