@@ -363,7 +363,7 @@
                   </div>
                 </div>
                 <div class="glide__slide skill-card">
-                  <h2>CYbersecurity</h2>
+                  <h2>Cybersecurity</h2>
                   <div class="tags">
                     <span class="tag">Application Security</span>
                     <span class="tag">AWS</span>
@@ -396,7 +396,9 @@
     <script src="/src/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
-      new Glide(".glide").mount();
+      new Glide(".glide", {
+        type: "carousel",
+      }).mount();
     </script>
   </body>
 </html>
