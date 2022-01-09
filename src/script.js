@@ -32,6 +32,13 @@ let dataScienceRole = document.querySelector(".data-science");
 let cyber = document.querySelector("#cybersecurity");
 let cyberRole = document.querySelector(".cybersecurity");
 
+let softEngTag = document.getElementsByClassName(".software-eng-tag");
+let webDevTag = document.getElementsByClassName(".web-dev-tag");
+let qaTag = document.getElementsByClassName(".qa-tag");
+let devOpsTag = document.getElementsByClassName(".cloud-devops-tag");
+let dataScienceTag = document.getElementsByClassName(".data-science-tag");
+let cyberTag = document.getElementsByClassName(".cybersecurity-tag");
+
 softEng.onclick = () => {
   if (
     !softEng.classList.contains("active") &&
@@ -43,15 +50,25 @@ softEng.onclick = () => {
 
     webDev.classList.remove("active");
     webDevRole.classList.remove("active");
+
     qa.classList.remove("active");
     qaRole.classList.remove("active");
+
     devOps.classList.remove("active");
     devOpsRole.classList.remove("active");
+
     dataScience.classList.remove("active");
     dataScienceRole.classList.remove("active");
+
     cyber.classList.remove("active");
     cyberRole.classList.remove("active");
+    cyberTag.classList.remove("active");
   }
+
+  // if (!softEngTag.classList.contains("active")) {
+  //   console.log("clicked");
+  //   softEngTag.classList.add(active);
+  // }
 };
 
 webDev.onclick = () => {
@@ -65,12 +82,16 @@ webDev.onclick = () => {
 
     softEng.classList.remove("active");
     softEngRole.classList.remove("active");
+
     qa.classList.remove("active");
     qaRole.classList.remove("active");
+
     devOps.classList.remove("active");
     devOpsRole.classList.remove("active");
+
     dataScience.classList.remove("active");
     dataScienceRole.classList.remove("active");
+
     cyber.classList.remove("active");
     cyberRole.classList.remove("active");
   }
@@ -109,6 +130,8 @@ devOps.onclick = () => {
     !devOpsRole.classList.contains("active")
   ) {
     console.log("clicked");
+    devOps.classList.add("active");
+    devOpsRole.classList.add("active");
 
     qa.classList.remove("active");
     qaRole.classList.remove("active");
@@ -118,9 +141,6 @@ devOps.onclick = () => {
 
     softEng.classList.remove("active");
     softEngRole.classList.remove("active");
-
-    devOps.classList.add("active");
-    devOpsRole.classList.add("active");
 
     dataScience.classList.remove("active");
     dataScienceRole.classList.remove("active");
@@ -136,6 +156,8 @@ dataScience.onclick = () => {
     !dataScienceRole.classList.contains("active")
   ) {
     console.log("clicked");
+    dataScience.classList.add("active");
+    dataScienceRole.classList.add("active");
 
     qa.classList.remove("active");
     qaRole.classList.remove("active");
@@ -149,9 +171,6 @@ dataScience.onclick = () => {
     devOps.classList.remove("active");
     devOpsRole.classList.remove("active");
 
-    dataScience.classList.add("active");
-    dataScienceRole.classList.add("active");
-
     cyber.classList.remove("active");
     cyberRole.classList.remove("active");
   }
@@ -163,6 +182,8 @@ cyber.onclick = () => {
     !cyberRole.classList.contains("active")
   ) {
     console.log("clicked");
+    cyber.classList.add("active");
+    cyberRole.classList.add("active");
 
     qa.classList.remove("active");
     qaRole.classList.remove("active");
@@ -178,8 +199,5 @@ cyber.onclick = () => {
 
     dataScience.classList.remove("active");
     dataScienceRole.classList.remove("active");
-
-    cyber.classList.add("active");
-    cyberRole.classList.add("active");
   }
 };

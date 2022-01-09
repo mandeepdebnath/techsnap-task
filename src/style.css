@@ -587,6 +587,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.5;
+}
+.skills-tags .tag.active {
+  opacity: 1;
 }
 
 .skills-job-role ul {
