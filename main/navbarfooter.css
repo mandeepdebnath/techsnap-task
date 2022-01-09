@@ -524,6 +524,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   overflow: hidden;
+  margin-bottom: 100px;
 }
 .Footer_columns {
   height: 200px;
@@ -587,7 +588,7 @@
 .input_holder button {
   outline: none;
   border: none;
-  width: 90px;
+  width: 127px;
   height: 35px;
   border-radius: 20px;
   background: #ff00bb;
