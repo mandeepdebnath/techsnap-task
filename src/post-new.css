@@ -82,3 +82,15 @@ button.review-btn:hover {
   color: #8f8f8f !important;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .editor-section {
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  .editor-section .flex-left,
+  .editor-section .flex-right {
+    width: 100%;
+  }
+}
