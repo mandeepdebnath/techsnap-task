@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/contactus.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -22,6 +23,7 @@
 
 		<title>Techsnap</title>
 
+        <link rel="stylesheet" href="main/navbarfooter.css">
         
 		<link rel="shortcut icon" type="image/png" href="main/favicon.png"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -1165,7 +1167,10 @@
       />
     </section>
 
-    <section class="why-section container">
+    <section class="why-section-container">
+
+    
+    <div class="why-section container">
       <h1>Why Techsnap</h1>
       <div class="grid-section">
         <div class="item">
@@ -1233,7 +1238,8 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+</section>
 
     <section class="container mission-section">
       <div class="heading">
@@ -1409,93 +1415,15 @@
               </ul>
             </div>
 
-            <div class="skills-tags">
-              <span class="tag software-eng-tag">Code Quality</span>
-              <span class="tag web-dev-tag">Angular</span>
-              <span class="tag web-dev-tag">Code Quality</span>
-
-              <span class="tag web-dev-tag">SQL</span>
-              <span class="tag data-science-tag">Code Quality</span>
-              <span class="tag web-dev-tag">CSS</span>
-              <span class="tag web-dev-tag software-eng-tag">REST API</span>
-
-              <span class="tag web-dev-tag">JavaScript</span>
-
-              <span class="tag qa-tag">Java</span>
-
-              <span class="tag web-dev-tag data-science-tag"
-                >System Design</span
-              >
-              <span class="tag data-science-tag">Apache Spark</span>
-
-              <span class="tag web-dev-tag">Node.js</span>
-
-              <span class="tag data-science-tag">Java</span>
-
-              <span class="tag qa-tag">Jenkins</span>
-
-              <span class="tag software-eng-tag">Problem Solving</span>
-
-              <span class="tag cloud-devops-tag">Jenkins</span>
-
-              <span class="tag data-science-tag">SQL</span>
-
-              <span class="tag data-science-tag">Couchbase</span>
-
-              <span class="tag cloud-devops-tag">Code Quality</span>
-
-              <span class="tag qa-tag">Selenium</span>
-
-              <span class="tag cloud-devops-tag">AWS</span>
-
-              <span class="tag data-science-tag">Data Modeling</span>
-
-              <span class="tag software-eng-tag">Language Proficiency</span>
-              <span class="tag data-science-tag">Applied Math</span>
-
-              <span class="tag cybersecurity-tag">AWS</span>
-
-              <span class="tag data-science-tag">Data Visualization</span>
-
-              <span class="tag data-science-tag">Kafka</span>
-
-              <span class="tag cloud-devops-tag cybersecurity-tag">Linux</span>
-
-              <span class="tag data-science-tag">Scala</span>
-
-              <span class="tag qa-tag">Technical Communications</span>
-
-              <span class="tag cloud-devops-tag">Kubernetes</span>
-
-              <span class="tag cloud-devops-tag">Docker</span>
-
-              <span class="tag data-science-tag">Machine Learning</span>
-
-              <span class="tag cloud-devops-tag">Ansible</span>
-
-              <span class="tag cybersecurity-tag">Kubernetes Security</span>
-
-              <span class="tag data-science-tag">Data Wrangling</span>
-
-              <span class="tag data-science-tag">PyTorch</span>
-
-              <span class="tag data-science-tag">Hadoop</span>
-
-              <span class="tag cybersecurity-tag">Application Security</span>
-
-              <span class="tag cloud-devops-tag">TensorFlow</span>
-              <span class="tag data-science-tag">R</span>
-
-              <span class="tag cybersecurity-tag">Cryptography</span>
-
-              <span class="tag data-science-tag">Statistics</span>
-
-              <span class="tag cybersecurity-tag">Network Security</span>
-
-              <span class="tag data-science-tag">TensorFlow</span>
-
-              <span class="tag cloud-devops-tag">Terraform</span>
+            <div class="skills-img">
+                <img src="/assets/eng.png" alt="software-eng-img" class="software-eng-img active">
+                <img src="/assets/webdev.png" alt="web-dev-img" class="web-dev-img">
+                <img src="/assets/testing.png" alt="qa-img" class="qa-img">
+                <img src="/assets/cloud.png" alt="cloud-devops-img" class="cloud-devops-img">
+                <img src="/assets/ml.png" alt="data-science-img" class="data-science-img">
+                <img src="/assets/cyber.png" alt="cybersecurity-img" class="cybersecurity-img">
             </div>
+
           </div>
         </div>
       </div>
@@ -1614,6 +1542,54 @@
         </div>
       </div>
     </section>
+
+    <div class="contact-us-container" style="background-image: url(https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80);">
+        <section class="contact-us-section">
+            <div class="contact-us-left">
+    <h1>
+                Achieve your career goals <span>with confidence.</span>
+            </h1>
+            <p>Create your Techsnap account →</p>
+            </div>
+            <div class="contact-us-right">
+                <div class="contact-us-form-holder">
+    <h1>Create Your Free Account</h1>
+    <div class="contact-us-accounts">
+    <a class="contact-us-social-media-buttons" href="{% url 'social:begin' 'google-oauth2' %}?next={{request.GET.next}}">
+        <img src="{% static 'assets/main/google.svg'%}" alt="socail" />
+    <p>Google</p>
+    </a>
+    <a class="contact-us-social-media-buttons" href="{% url 'social:begin' 'facebook' %}?next={{request.GET.next}}">
+        <img src="{% static 'assets/main/facebook.svg'%}" alt="socail" />
+    <p>Facebook</p>
+    </a>
+    <a class="contact-us-social-media-buttons" href="{% url 'social:begin' 'linkedin-oauth2' %}?next={{request.GET.next}}">
+        <img src="{% static 'assets/main/linkedin.svg'%}" alt="socail" />
+    <p>Linkedin</p>
+    </a>
+    </div>
+    <div class="contact-us-or-line" >
+    <hr></hr>
+                    <p>or</p>
+    </div>
+    <form action="{% url 'register' %}" method="POST">
+                    <label>Username</label>
+                    <input type='text' placeholder='Username' name='username' required/>
+                    <label>Email Address</label>
+                    <input type='email' placeholder='Email' name="email" required/>
+                    <label>Password</label>
+                    <input type='password' placeholder='Password' name="password" required/>
+                    <button type='submit'>Start Learning For Free</button>
+                </form>
+                <div class="contact-us-footer">
+                    <p>
+                        Have Account ? <a href="{% url 'login' %}">Login Here</a>
+                    </p>
+                </div>
+    </div>
+            </div>
+        </section>
+    </div>
 
     <!-- FOOTER -->
     <div class="mainBody">
